@@ -1,0 +1,64 @@
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Initial source changes: [0m
+[0m[[0mdebug[0m] [0m[naha] 	removed:Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	added: Set(/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] 	modified: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Invalidated products: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] External API changes: API Changes: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Modified binary dependencies: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] Initial directly invalidated sources: Set(/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] [0m
+[0m[[0mdebug[0m] [0m[naha] Sources indirectly invalidated by:[0m
+[0m[[0mdebug[0m] [0m[naha] 	product: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	binary dep: Set()[0m
+[0m[[0mdebug[0m] [0m[naha] 	external source: Set()[0m
+[0m[[0mdebug[0m] [0mAll initially invalidated sources: Set(/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala)[0m
+[0m[[0mdebug[0m] [0m[naha] Recompiling all 1 sources: invalidated sources (1) exceeded 50.0% of all sources[0m
+[0m[[0minfo[0m] [0mCompiling 1 Scala source to /home/student/Documents/projects/MovingToFunctional/src/test/scala/target/scala-2.10/classes...[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.10.6[0m
+[0m[[0minfo[0m] [0m'compiler-interface' not yet compiled for Scala 2.10.6. Compiling...[0m
+[0m[[0mdebug[0m] [0mPlain interface to Scala compiler 2.10.6  with arguments: [0m
+[0m[[0mdebug[0m] [0m	-nowarn[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_d30d8d74[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/student/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/student/.sbt/boot/scala-2.10.6/org.scala-sbt/sbt/0.13.11/xsbti/interface-0.13.11.jar:/tmp/sbt_c425e519/srcs/org.scala-sbt/compiler-interface/compiler-interface-0.13.11-sources.jar:/home/student/.sbt/boot/scala-2.10.6/lib/scala-compiler.jar:/home/student/.sbt/boot/scala-2.10.6/lib/scala-reflect.jar:/home/student/.sbt/boot/scala-2.10.6/lib/jansi.jar:/home/student/.sbt/boot/scala-2.10.6/lib/jline.jar[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/API.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/Analyzer.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/Command.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/Compat.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/CompilerInterface.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/ConsoleInterface.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/DelegatingReporter.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/Dependency.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/ExtractAPI.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/ExtractUsedNames.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/LocateClassFile.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/Log.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/Message.scala[0m
+[0m[[0mdebug[0m] [0m	/tmp/sbt_9ff9b543/xsbt/ScaladocInterface.scala[0m
+[0m[[0minfo[0m] [0m  Compilation completed in 8.188 s[0m
+[0m[[0mdebug[0m] [0mGetting org.scala-sbt:compiler-interface:0.13.11:component from component compiler for Scala 2.10.6[0m
+[0m[[0mdebug[0m] [0mRunning cached compiler 10ab012, interfacing (CompilerInterface) with Scala compiler version 2.10.6[0m
+[0m[[0mdebug[0m] [0mCalling Scala compiler with arguments  (CompilerInterface):[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/usr/lib/jvm/java-8-oracle/jre/lib/resources.jar:/usr/lib/jvm/java-8-oracle/jre/lib/rt.jar:/usr/lib/jvm/java-8-oracle/jre/lib/sunrsasign.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jsse.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jce.jar:/usr/lib/jvm/java-8-oracle/jre/lib/charsets.jar:/usr/lib/jvm/java-8-oracle/jre/lib/jfr.jar:/usr/lib/jvm/java-8-oracle/jre/classes:/home/student/.sbt/boot/scala-2.10.6/lib/scala-library.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/home/student/Documents/projects/MovingToFunctional/src/test/scala/target/scala-2.10/classes[0m
+[0m[[31merror[0m] [0m/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala:1: object scalatest is not a member of package org[0m
+[0m[[31merror[0m] [0mimport org.scalatest._[0m
+[0m[[31merror[0m] [0m           ^[0m
+[0m[[31merror[0m] [0m/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala:3: not found: type FlatSpec[0m
+[0m[[31merror[0m] [0mclass ThirtyDayTotalSpec extends FlatSpec with Matchers {[0m
+[0m[[31merror[0m] [0m                                 ^[0m
+[0m[[31merror[0m] [0m/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala:3: not found: type Matchers[0m
+[0m[[31merror[0m] [0mclass ThirtyDayTotalSpec extends FlatSpec with Matchers {[0m
+[0m[[31merror[0m] [0m                                               ^[0m
+[0m[[31merror[0m] [0m/home/student/Documents/projects/MovingToFunctional/src/test/scala/ThirtyDayTotalSpec.scala:5: not found: value it[0m
+[0m[[31merror[0m] [0m	it should "Pass" in {[0m
+[0m[[31merror[0m] [0m	^[0m
+[0m[[31merror[0m] [0mfour errors found[0m
+[0m[[0mdebug[0m] [0mCompilation failed (CompilerInterface)[0m
+[0m[[31merror[0m] [0m(compile:[31mcompileIncremental[0m) Compilation failed[0m
