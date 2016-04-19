@@ -6,44 +6,54 @@ class ThirtyDayTotal(transactions: List[Map[String, Any]]) {
 
 object ThirtyDayTotal {
 
+  // This is a freebie because the implementation is not
+  // important to the greater lesson.
   def roundTo (precision: Int)(value: Double) = {
     val mag = math pow (10, precision)
     (math floor value * mag) / mag
   }
 
-  def isNoSale (transaction: Map[String, Any]) = {
-    transaction("transactionType") == "nosale"
-  }
-
-  def isRefund (transaction: Map[String, Any]) = {
-    transaction("transactionType") == "refund"
-  }
-
-  def isCurrentTransaction (currentDate: Long) = {
-    val lowerBound = currentDate - 30 * 24 * 60 * 60
-
-    (transaction: Map[String, Any]) => {
-        transaction("date").asInstanceOf[Int] >= lowerBound &&
-        transaction("date").asInstanceOf[Int] <= currentDate
-    }
-  }
-
-  def getTransactionTotal (transaction: Map[String, Any]) = {
-    transaction("total").asInstanceOf[Double]
-  }
-
   def getTransactionValue (transaction: Map[String, Any]) = {
-    transaction match {
-      case transaction if isNoSale(transaction) => 0.0
-      case transaction if isRefund(transaction) => getTransactionTotal(transaction) * -1
-      case _ => getTransactionTotal(transaction)
+    var transactionValue = transaction("total").asInstanceOf[Double]
+
+    if(transaction("transactionType") == "nosale") {
+      transactionValue = 0.0
+    } else if (transaction("transactionType") == "refund") {
+      transactionValue = transactionValue * -1
     }
+
+    transactionValue
+  }
+
+  def filterTransactionsByDate (currentSeconds: Long, transactions: List[Map[String, Any]]) = {
+    var filteredTransactions: List[Map[String, Any]] = List()
+    var lowerBound = currentSeconds - 30 * 24 * 60 * 60
+
+    for(transaction <- transactions) {
+      var transactionDate = transaction("date").asInstanceOf[Int]
+
+      if(transactionDate >= lowerBound && transactionDate <= currentSeconds) {
+        filteredTransactions = transaction :: filteredTransactions
+      }
+    }
+
+    filteredTransactions
+  }
+
+  def addTransactionTotals (transactions: List[Map[String, Any]]) = {
+    var total = 0.0
+
+    for(transaction <- transactions) {
+      total += getTransactionValue(transaction)
+    }
+
+    total
   }
 
   def totalCurrentTransactions (transactions: List[Map[String, Any]]) = {
-    val total = (transactions
-                 filter isCurrentTransaction(System.currentTimeMillis() / 1000)
-                 map {getTransactionValue _} fold(0.0)) {_+_}
+    var currentSeconds = System.currentTimeMillis() / 1000
+    var currentTransactions = filterTransactionsByDate(currentSeconds, transactions)
+    val total = addTransactionTotals(currentTransactions)
 
     roundTo(2)(total)
   }
